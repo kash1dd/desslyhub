@@ -10,11 +10,35 @@ dependencies = [
 readme = "README.md"
 license = "MIT"
 authors = [
-    {name = "kash1d", email="kash1d@gmail.com"}
+    {name = "kash1d"}
 ]
 maintainers = [
-    {name = "kash1d", email="kash1d@gmail.com"}
+    {name = "kash1d"}
 ]
+keywords = [
+    "desslyhub",
+    "dessly",
+    "api",
+    "framework",
+    "sdk",
+    "library",
+    "wrapper",
+    "asyncio",
+    "http"
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
+]
+
+[project.urls]
+Telegram = "https://t.me/desslyhub_api"
+Issues = "https://github.com/kash1dd/desslyhub/issues"
+Repository = "https://github.com/kash1dd/desslyhub"
 
 [dependency-groups]
 dev = [
@@ -27,6 +51,10 @@ lint = [
 tests = [
     "pytest>=7.2.0"
 ]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [tool.ruff]
 line-length = 99

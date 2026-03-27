@@ -1,4 +1,8 @@
-# desslyhub
+<p align="center">
+  <img src="assets/desslyhub-logo.svg" alt="DesslyHub"/>
+</p>
+
+<h2 style="text-align:center;">DesslyHub API</h2>
 
 Асинхронная Python-библиотека для работы с [DesslyHub API](https://desslyhub.com). Поддерживает пополнение Steam-аккаунтов, покупку и отправку игр в подарок, ваучеры, пополнение мобильных игр и управление транзакциями.
 
