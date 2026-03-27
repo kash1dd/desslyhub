@@ -1,0 +1,72 @@
+[project]
+name = "desslyhub"
+version = "0.1.0"
+description = "Библиотека для работы с API DesslyHub"
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.13.3",
+    "pydantic>=2.12.5",
+]
+readme = "README.md"
+license = "MIT"
+authors = [
+    {name = "kash1d", email="kash1d@gmail.com"}
+]
+maintainers = [
+    {name = "kash1d", email="kash1d@gmail.com"}
+]
+
+[dependency-groups]
+dev = [
+    {include-group = "lint"},
+    {include-group = "tests"},
+]
+lint = [
+    "ruff>=0.15.6",
+]
+tests = [
+    "pytest>=7.2.0"
+]
+
+[tool.ruff]
+line-length = 99
+src = ["desslyhub"]
+exclude = [
+    ".git",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".venv",
+    "build",
+    "dist",
+    "docs",
+    ".pytest_cache",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+line-ending = "lf"
+indent-style = "space"
+
+[tool.ruff.lint]
+select = [
+    "I",
+    "N",
+    "C4",
+    "E",
+    "F",
+    "T20",
+    "RET",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F403"]
+
+[tool.ruff.lint.isort]
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
+required-imports = ["from __future__ import annotations"]
+force-to-top = ["typing", "dataclasses", "pydantic"]
+length-sort = true
+lines-between-types = 0
+lines-after-imports = 2
+split-on-trailing-comma = true
+combine-as-imports = true
