@@ -6,7 +6,7 @@
 
 Асинхронная Python-библиотека для работы с [DesslyHub API](https://desslyhub.com). Поддерживает пополнение Steam-аккаунтов, покупку и отправку игр в подарок, ваучеры, пополнение мобильных игр и управление транзакциями.
 
-- [Telegram Чат](https://pages.github.com/)
+- [Telegram Чат](https://t.me/desslyhub_api)
 
 ## Установка
 
